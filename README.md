@@ -149,7 +149,7 @@ Sources/cmfdial/
     CMFDialApp.swift  window + menu bar
     Snapshot.swift    `cmfdial snapshot out.png [tab] [light|dark]` for layout checks
 tools/make-icon.swift app icon generator used by make-app.sh
-Resources/            Nothing fonts and product images (private, see below)
+Resources/            Nothing fonts and product images (see Assets)
 docs/PROTOCOL.md      what's known about the buds' control protocol
 ```
 
@@ -161,7 +161,7 @@ docs/PROTOCOL.md      what's known about the buds' control protocol
 - Tested with CMF Buds Pro 2 only.
 
 ## Assets
-`Resources/` contains Nothing's fonts and official product images, for personal use only. This repository must stay **private**; see [`Resources/README.md`](Resources/README.md). The app builds and runs without them: it falls back to a drawn dot-matrix font and a drawn case.
+The Ndot and Lettera Mono fonts and the CMF Buds Pro 2 product images in `Resources/` are owned by Nothing Technology Limited and are just used here for the app's look. The app also runs without them, falling back to a drawn dot-matrix font and a drawn case.
 
 ## Credits
 Protocol details were cross-checked against the community project [radiance-project/ear-web](https://github.com/radiance-project/ear-web) and reverse-engineering notes for Nothing earbuds.
