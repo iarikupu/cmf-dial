@@ -1,0 +1,6 @@
+.build/
+*.app
+cmfdial
+captures/
+config.json
+.DS_Store
