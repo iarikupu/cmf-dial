@@ -3,7 +3,7 @@ import Foundation
 // Nothing/CMF control protocol on RFCOMM "NTAPP" (channel 16).
 // Frame: 55 | 60 01 | cmd(LE16) | len | 00 | opId | payload | CRC16-MODBUS(LE)
 // Responses/notifications start 55 20 01. Command IDs and payloads come from the
-// community ear-web project (radiance-project/ear-web), cross-checked against your captures.
+// community ear-web project (radiance-project/ear-web), cross-checked against captures from real buds.
 
 enum NT {
     static let channel: UInt8 = 16
