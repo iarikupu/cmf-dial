@@ -1,0 +1,6 @@
+Ndot-Regular.otf and LatteraMonoLL.otf were taken from nothing.tech for personal, local use in this app.
+They are Nothing's typefaces (not open source). Don't redistribute or publish this folder or the built app.
+Delete this folder and the app falls back to a self-drawn dot-matrix and the system monospaced font.
+
+Resources/Images/case-buds.png and smart-dial.jpg are official CMF Buds Pro 2 product images from nothing.tech
+(Nothing Technology Limited). Kept for personal, local use only; don't redistribute.

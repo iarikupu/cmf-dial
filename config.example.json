@@ -1,0 +1,12 @@
+{
+  "device_address": "AA:BB:CC:DD:EE:FF",
+  "device_name": "CMF",
+
+  "dial": {
+    "restore_volume": true,
+    "up":   { "type": "app_switcher", "key": "next" },
+    "down": { "type": "app_switcher", "key": "prev" }
+  },
+
+  "rfcomm": []
+}
