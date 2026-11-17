@@ -67,6 +67,9 @@ final class DialEngine: ObservableObject {
     @Published var outputName = "—"
     @Published var outputIsBuds = false
 
+    /// Snapshot renders: sample data only — no Bluetooth, permissions or saved settings.
+    var preview = false
+
     private var started = false
     private var watcher: VolumeWatcher?
     private var link: RFCOMMLink?
@@ -92,6 +95,7 @@ final class DialEngine: ObservableObject {
     }
 
     private func save() {
+        guard !preview else { return }
         if let d = try? JSONEncoder().encode(settings) { UserDefaults.standard.set(d, forKey: Self.key) }
     }
 
@@ -123,7 +127,7 @@ final class DialEngine: ObservableObject {
     // MARK: Lifecycle
 
     func start() {
-        guard !started else { return }
+        guard !started, !preview else { return }
         started = true
         openAppLog()
         log("Accessibility trusted: \(AXIsProcessTrusted())")

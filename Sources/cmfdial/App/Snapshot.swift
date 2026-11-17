@@ -12,6 +12,7 @@ func renderSnapshot(path: String, tab: String, scheme: String) {
     NSApplication.shared.appearance = NSAppearance(named: scheme == "light" ? .aqua : .darkAqua)
     NSAppearance.current = NSApplication.shared.appearance
     let engine = DialEngine()
+    engine.preview = true
     engine.connected = true
     engine.battery = Battery(left: 85, right: 85, caseLevel: 90, leftCharging: false, rightCharging: false, caseCharging: true)
     engine.dialMode = .volume
